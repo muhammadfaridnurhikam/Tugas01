@@ -3,28 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+    <title>Kalkulator Sederhana</title> <!-- Judul "Kalkulator Sederhana" -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Variabel</h1>
+    <div class="calculator">
+        <title>Percabangan-1</title>
+        <input type="text" id="angka1" placeholder="Angka Pertama">
+        <select id="operator">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+        </select>
+        <input type="text" id="angka2" placeholder="Angka Kedua">
+        <button onclick="hitung()">Hitung</button>
+        <p>Hasil: <span id="hasil"></span></p>
+    </div>
 
-    <form name ="fform">
-        <h1><br>Memasukkan Data Lewat Keyboard</h1>
-        <h4>
-         Bilangan Pertama	:<input type="text" size="11" name="bilangan1"> 
-         Bilangan Kedua	:<input type="text" size="11" name="bilangan2">
-        </h4>
-        <P>
-        <input type="button" value="Jumlahkan" onclick="jumlah()">
-        <input type="button" value="Pengurangan" onclick="kurang()">
-        <input type="button" value="Perkalian" onclick="kali()">
-        <input type="button" value="Pembagian" onclick="bagi()">
-        <input type="reset" value="Ulang">
-        </P>
-    </form>
-        
-    
     <script src="script.js"></script>
 </body>
 </html>
